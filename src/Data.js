@@ -1,0 +1,136 @@
+const datas = [
+  {
+    name: "Sonja Green",
+    avatar: "https://cdn.fakercloud.com/avatars/joelcipriano_128.jpg",
+    job: "Architect",
+    id: "1",
+  },
+  {
+    name: "Chelsea Goodwin",
+    avatar: "https://cdn.fakercloud.com/avatars/jm_denis_128.jpg",
+    job: "Designer",
+    id: "2",
+  },
+  {
+    name: "Samantha Simonis",
+    avatar: "https://cdn.fakercloud.com/avatars/skkirilov_128.jpg",
+    job: "Designer",
+    id: "3",
+  },
+  {
+    name: "Jerald Homenick",
+    avatar: "https://cdn.fakercloud.com/avatars/jeremiespoken_128.jpg",
+    job: "Consultant",
+    id: "4",
+  },
+  {
+    name: "Henrietta Kreiger",
+    avatar: "https://cdn.fakercloud.com/avatars/alsobrooks_128.jpg",
+    job: "Officer",
+    id: "5",
+  },
+  {
+    name: "Stacey Adams",
+    avatar: "https://cdn.fakercloud.com/avatars/1markiz_128.jpg",
+    job: "Designer",
+    id: "6",
+  },
+  {
+    name: "Debbie Koelpin",
+    avatar: "https://cdn.fakercloud.com/avatars/vikasvinfotech_128.jpg",
+    job: "Planner",
+    id: "7",
+  },
+  {
+    name: "Casey Beer",
+    avatar: "https://cdn.fakercloud.com/avatars/vivekprvr_128.jpg",
+    job: "Architect",
+    id: "8",
+  },
+  {
+    name: "Marc Nicolas",
+    avatar: "https://cdn.fakercloud.com/avatars/g3d_128.jpg",
+    job: "Associate",
+    id: "9",
+  },
+  {
+    name: "Lana Hartmann",
+    avatar: "https://cdn.fakercloud.com/avatars/HenryHoffman_128.jpg",
+    job: "Associate",
+    id: "10",
+  },
+  {
+    name: "Devin Grady",
+    avatar: "https://cdn.fakercloud.com/avatars/joelhelin_128.jpg",
+    job: "Designer",
+    id: "11",
+  },
+  {
+    name: "Nicolas Fritsch",
+    avatar: "https://cdn.fakercloud.com/avatars/kushsolitary_128.jpg",
+    job: "Developer",
+    id: "12",
+  },
+  {
+    name: "Paula Skiles",
+    avatar: "https://cdn.fakercloud.com/avatars/joelhelin_128.jpg",
+    job: "Developer",
+    id: "13",
+  },
+  {
+    name: "Wilfred Von",
+    avatar: "https://cdn.fakercloud.com/avatars/xiel_128.jpg",
+    job: "Representative",
+    id: "14",
+  },
+  {
+    name: "Phyllis Schmitt",
+    avatar: "https://cdn.fakercloud.com/avatars/m_kalibry_128.jpg",
+    job: "Orchestrator",
+    id: "15",
+  },
+  {
+    name: "Zachary Heaney",
+    avatar: "https://cdn.fakercloud.com/avatars/gmourier_128.jpg",
+    job: "Facilitator",
+    id: "16",
+  },
+  {
+    name: "Ernesto Marks Sr.",
+    avatar: "https://cdn.fakercloud.com/avatars/osmond_128.jpg",
+    job: "Specialist",
+    id: "17",
+  },
+  {
+    name: "Bridget Murphy",
+    avatar: "https://cdn.fakercloud.com/avatars/incubo82_128.jpg",
+    job: "Analyst",
+    id: "18",
+  },
+  {
+    name: "Ms. Salvador Osinski",
+    avatar: "https://cdn.fakercloud.com/avatars/kerihenare_128.jpg",
+    job: "Planner",
+    id: "19",
+  },
+  {
+    name: "Darrin Beatty",
+    avatar: "https://cdn.fakercloud.com/avatars/ZacharyZorbas_128.jpg",
+    job: "Developer",
+    id: "20",
+  },
+  {
+    name: "Caroline Becker",
+    avatar: "https://cdn.fakercloud.com/avatars/_pedropinho_128.jpg",
+    job: "Supervisor",
+    id: "21",
+  },
+  {
+    name: "Tammy Tillman",
+    avatar: "https://cdn.fakercloud.com/avatars/illyzoren_128.jpg",
+    job: "Engineer",
+    id: "22",
+  },
+];
+
+export default datas;
