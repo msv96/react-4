@@ -1,3 +1,5 @@
+import { faPen, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import UserContext from "./UserContext";
@@ -20,16 +22,17 @@ function EditUser(props) {
     el.preventDefault();
     userContext.userList[props.match.params.id - 1] = { name, job, avatar };
     userContext.setUserList([...userContext.userList]);
-    history.push("/user");
+    history.push("/users");
   };
 
   return (
     <div>
       <header className="head">Edit User</header>
       <form onSubmit={handleSubmit}>
-        <div className="container">
-          <label>Name</label>
+        <div className="d-grid-1">
+          <label htmlFor="name">Name</label>
           <input
+            id="name"
             type="text"
             className="form-control"
             value={name}
@@ -38,10 +41,9 @@ function EditUser(props) {
             }}
             required
           />
-        </div>
-        <div className="col-lg-6">
-          <label>Position</label>
+          <label htmlFor="job">Job</label>
           <input
+            id="job"
             type="text"
             className="form-control"
             value={job}
@@ -50,10 +52,9 @@ function EditUser(props) {
             }}
             required
           />
-        </div>
-        <div className="col-lg-6">
-          <label>Office</label>
+          <label htmlFor="avatar">Avatar</label>
           <input
+            id="avatar"
             type="text"
             className="form-control"
             value={avatar}
@@ -63,14 +64,18 @@ function EditUser(props) {
             required
           />
         </div>
-        <div className="col-lg-12">
-          <input type="submit" value="Edit" className="btn btn-primary mt-3" />
-        </div>
-        <Link to="/users">
-          <button type="submit" className="btn">
-            Cancel
+        <div>
+          <button type="submit" className="btn3">
+            <FontAwesomeIcon icon={faPen} size="sm" key="dj9"></FontAwesomeIcon>{" "}
+            Edit
           </button>
-        </Link>
+          <Link to="/users">
+            <button type="submit" className="btn3">
+              <FontAwesomeIcon icon={faTimes} key="js9"></FontAwesomeIcon>{" "}
+              Cancel
+            </button>
+          </Link>
+        </div>
       </form>
     </div>
   );

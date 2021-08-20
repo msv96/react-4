@@ -15,8 +15,16 @@ function App() {
           <UserProvider>
             <Route path="/" component={Dashboard} exact={true}></Route>
             <Route path="/users" component={Users} exact={true}></Route>
-            <Route path="/create-user" component={CreateUser} exact={true}></Route>
-            <Route path="/edit-user/:id" component={EditUser} exact={true}></Route>
+            <Route
+              path="/create-user"
+              component={CreateUser}
+              exact={true}
+            ></Route>
+            <Route
+              path="/edit-user/:id"
+              component={EditUser}
+              exact={true}
+            ></Route>
           </UserProvider>
         </Switch>
       </div>

@@ -1,17 +1,17 @@
 body {
   margin: 0;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 .App {
   margin: 20px 0%;
   text-align: center;
 }
 .head {
-  margin: 0% auto 3% auto;
+  margin: 0% auto 2% auto;
   font-size: 2.2em;
-  font-family: sans-serif;
   color: hsl(250, 100%, 50%);
   padding: 30px 10px;
+  min-width: 400px;
   width: 70%;
   border-radius: 0% 200px;
   background-color: hsl(30, 100%, 70%);
@@ -22,47 +22,97 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  min-width: 600px;
   width: 80%;
 }
+.headtag {
+  font-weight: 700;
+}
 .main {
-  font-size: 1.2em;
   text-align: center;
   margin: 20px;
   padding: 20px;
   border: 1px solid hsl(0, 0%, 90%);
-  border-radius: 30% 0%;
+  border-radius: 20% 0%;
   width: 260px;
-  height: 250px;
+  height: 300px;
 }
-.main:hover {
-  background-color: hsl(270, 100%, 80%);
+.bodytag {
+  height: 225px;
 }
 .img {
   border-radius: 10% 50%;
 }
 .btn {
+  margin: 10px;
   font-size: 1.1em;
   border: none;
   padding: 15px;
   border-radius: 5px;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(220, 100%, 50%);
+  background-color: hsl(260, 100%, 50%);
 }
-.btn:hover {
+.btn1 {
+  margin: 10px;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(80, 50%, 50%);
+}
+.btn2 {
+  margin: 0px 5px;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 100%, 50%);
+}
+.btn3 {
+  margin: 10px;
+  font-size: 1em;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(280, 100%, 50%);
+}
+.btn4 {
+  margin: 10px;
+  font-size: 1.1em;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(260, 100%, 50%);
+}
+.btn:hover,
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
   cursor: pointer;
 }
-@media (min-width: 320px) and (max-width: 576px) {
-  .list {
-    width: 95%;
-  }
+.userlist {
+  text-align: start;
+  margin: 20px auto;
+  max-width: 80%;
 }
-@media (min-width: 577px) and (max-width: 768px) {
-  .list {
-    width: 90%;
-  }
+.d-grid {
+  display: grid;
+  grid-template-columns: 70px 200px 350px 450px 180px;
+  grid-template-rows: 40px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
-@media (min-width: 769px) and (max-width: 992px) {
-  .list {
-    width: 85%;
-  }
+.item {
+  justify-self: start;
+}
+.d-grid-1 {
+  display: grid;
+  grid-template-columns: 100px 500px;
+  gap: 20px;
+  justify-content: center;
 }

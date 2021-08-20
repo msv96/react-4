@@ -1,3 +1,5 @@
+import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import UserContext from "./UserContext";
@@ -12,16 +14,17 @@ function CreateUser() {
   let handleSubmit = (el) => {
     el.preventDefault();
     userContext.setUserList([...userContext.userList, { name, job, avatar }]);
-    history.push("/user");
+    history.push("/users");
   };
 
   return (
     <div>
       <header className="head">Create User</header>
       <form onSubmit={handleSubmit}>
-        <div className="container">
-          <label>Name</label>
+        <div className="d-grid-1">
+          <label htmlFor="name1">Name</label>
           <input
+            id="name1"
             type="text"
             className="form-control"
             value={name}
@@ -30,10 +33,9 @@ function CreateUser() {
             }}
             required
           />
-        </div>
-        <div className="col-lg-6">
-          <label>Job</label>
+          <label htmlFor="job1">Job</label>
           <input
+            id="job1"
             type="text"
             className="form-control"
             value={job}
@@ -42,10 +44,9 @@ function CreateUser() {
             }}
             required
           />
-        </div>
-        <div className="col-lg-6">
-          <label>Avatar</label>
+          <label htmlFor="avatar1">Avatar</label>
           <input
+            avatar="avatar1"
             type="text"
             className="form-control"
             value={avatar}
@@ -55,14 +56,16 @@ function CreateUser() {
             required
           />
         </div>
-        <div className="col-lg-12">
-          <input type="submit" value="Create" className="btn" />
-        </div>
-        <Link to="/users">
-          <button type="submit" className="btn">
-            Cancel
+        <div>
+          <button type="submit" className="btn3">
+            <FontAwesomeIcon icon={faPlus} size="sm" key="ssa3"></FontAwesomeIcon> Create
           </button>
-        </Link>
+          <Link to="/users">
+            <button type="submit" className="btn3">
+              <FontAwesomeIcon icon={faTimes} key="gll0"></FontAwesomeIcon> Cancel
+            </button>
+          </Link>
+        </div>
       </form>
     </div>
   );
