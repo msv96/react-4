@@ -26,15 +26,16 @@ function EditUser(props) {
   };
 
   return (
-    <div>
-      <header className="head">Edit User</header>
+    <>
+      <div className="headtag">
+        <header className="head">Edit User</header>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="d-grid-1">
           <label htmlFor="name">Name</label>
           <input
             id="name"
             type="text"
-            className="form-control"
             value={name}
             onChange={(el) => {
               setUserName(el.target.value);
@@ -45,7 +46,6 @@ function EditUser(props) {
           <input
             id="job"
             type="text"
-            className="form-control"
             value={job}
             onChange={(el) => {
               setPosition(el.target.value);
@@ -56,7 +56,6 @@ function EditUser(props) {
           <input
             id="avatar"
             type="text"
-            className="form-control"
             value={avatar}
             onChange={(el) => {
               setOffice(el.target.value);
@@ -64,7 +63,7 @@ function EditUser(props) {
             required
           />
         </div>
-        <div>
+        <div className="buttons">
           <button type="submit" className="btn3">
             <FontAwesomeIcon icon={faPen} size="sm" key="dj9"></FontAwesomeIcon>{" "}
             Edit
@@ -77,7 +76,7 @@ function EditUser(props) {
           </Link>
         </div>
       </form>
-    </div>
+    </>
   );
 }
 export default EditUser;

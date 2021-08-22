@@ -18,15 +18,16 @@ function CreateUser() {
   };
 
   return (
-    <div>
-      <header className="head">Create User</header>
+    <>
+      <div className="headtag">
+        <header className="head">Create User</header>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="d-grid-1">
           <label htmlFor="name1">Name</label>
           <input
             id="name1"
             type="text"
-            className="form-control"
             value={name}
             onChange={(el) => {
               setUserName(el.target.value);
@@ -37,7 +38,6 @@ function CreateUser() {
           <input
             id="job1"
             type="text"
-            className="form-control"
             value={job}
             onChange={(el) => {
               setPosition(el.target.value);
@@ -48,7 +48,6 @@ function CreateUser() {
           <input
             avatar="avatar1"
             type="text"
-            className="form-control"
             value={avatar}
             onChange={(el) => {
               setOffice(el.target.value);
@@ -56,7 +55,7 @@ function CreateUser() {
             required
           />
         </div>
-        <div>
+        <div className="buttons">
           <button type="submit" className="btn3">
             <FontAwesomeIcon icon={faPlus} size="sm" key="ssa3"></FontAwesomeIcon> Create
           </button>
@@ -67,7 +66,7 @@ function CreateUser() {
           </Link>
         </div>
       </form>
-    </div>
+    </>
   );
 }
 export default CreateUser;

@@ -21,22 +21,24 @@ function Users() {
   };
 
   return (
-    <div>
-      <header className="head">List of Users</header>
-      <Link to="/">
-        <button type="submit" className="btn">
-          <FontAwesomeIcon icon={faHome} key="dsad4"></FontAwesomeIcon>{" "}
-          Dashboard
-        </button>
-      </Link>
-      <Link to="/create-user">
-        <button type="submit" className="btn">
-          <FontAwesomeIcon icon={faPlus} key="asfgf"></FontAwesomeIcon> Create
-          User
-        </button>
-      </Link>
+    <>
+      <div className="headtag">
+        <header className="head">List of Users</header>
+        <Link to="/">
+          <button type="submit" className="btn">
+            <FontAwesomeIcon icon={faHome} key="dsad4"></FontAwesomeIcon>{" "}
+            Dashboard
+          </button>
+        </Link>
+        <Link to="/create-user">
+          <button type="submit" className="btn">
+            <FontAwesomeIcon icon={faPlus} key="asfgf"></FontAwesomeIcon> Create
+            User
+          </button>
+        </Link>
+      </div>
       <div className="userlist">
-        <div className="d-grid headtag">
+        <div className="d-grid table-headings">
           <div>ID</div>
           <div>NAME</div>
           <div>JOB</div>
@@ -78,7 +80,7 @@ function Users() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }
 export default Users;

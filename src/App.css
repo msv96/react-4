@@ -2,17 +2,10 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
-.App {
-  margin: 20px 0%;
-  text-align: center;
-}
 .head {
-  margin: 0% auto 2% auto;
   font-size: 2.2em;
   color: hsl(250, 100%, 50%);
   padding: 30px 10px;
-  min-width: 400px;
-  width: 70%;
   border-radius: 0% 200px;
   background-color: hsl(30, 100%, 70%);
 }
@@ -22,10 +15,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  min-width: 600px;
-  width: 80%;
 }
 .headtag {
+  text-align: center;
+  margin: 1% auto 1% auto;
+}
+.table-headings {
   font-weight: 700;
 }
 .main {
@@ -42,6 +37,9 @@ body {
 }
 .img {
   border-radius: 10% 50%;
+}
+.buttons {
+  text-align: center;
 }
 .btn {
   margin: 10px;
@@ -96,12 +94,9 @@ body {
 .userlist {
   text-align: start;
   margin: 20px auto;
-  max-width: 80%;
 }
 .d-grid {
   display: grid;
-  grid-template-columns: 70px 200px 350px 450px 180px;
-  grid-template-rows: 40px;
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -112,7 +107,59 @@ body {
 }
 .d-grid-1 {
   display: grid;
-  grid-template-columns: 100px 500px;
   gap: 20px;
   justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .headtag,
+  .dashboardlist,
+  .userlist {
+    width: 100%;
+  }
+  .d-grid {
+    grid-template-columns: 1fr 1fr 1fr 100px 1fr;
+  }
+  .d-grid-1 {
+    grid-template-columns: 250px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .headtag,
+  .dashboardlist,
+  .userlist {
+    width: 90%;
+  }
+  .d-grid {
+    grid-template-columns: 1fr 1fr 1fr 150px 1fr;
+  }
+  .d-grid-1 {
+    grid-template-columns: 100px 350px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .headtag,
+  .dashboardlist,
+  .userlist {
+    width: 80%;
+  }
+  .d-grid {
+    grid-template-columns: 1fr 1fr 1fr 280px 1fr;
+  }
+  .d-grid-1 {
+    grid-template-columns: 100px 500px;
+  }
+}
+@media (min-width: 1201px) {
+  .headtag,
+  .dashboardlist,
+  .userlist {
+    width: 80%;
+  }
+  .d-grid {
+    grid-template-columns: 50px 180px 280px 430px 160px;
+  }
+  .d-grid-1 {
+    grid-template-columns: 100px 500px;
+  }
 }

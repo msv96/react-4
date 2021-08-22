@@ -8,19 +8,21 @@ function Dashboard() {
   let usercontent = useContext(UserContext);
   return (
     <>
-      <header className="head">Dashboard</header>
-      <Link to="/users">
-        <button type="submit" className="btn">
-          <FontAwesomeIcon icon={faListAlt} key="sdh7"></FontAwesomeIcon> Full
-          User List
-        </button>
-      </Link>
-      <Link to="/create-user">
-        <button type="submit" className="btn">
-          <FontAwesomeIcon icon={faPlus} key="hsj8"></FontAwesomeIcon> Create
-          User
-        </button>
-      </Link>
+      <div className="headtag">
+        <header className="head">Dashboard</header>
+        <Link to="/users">
+          <button type="submit" className="btn">
+            <FontAwesomeIcon icon={faListAlt} key="sdh7"></FontAwesomeIcon> Full
+            User List
+          </button>
+        </Link>
+        <Link to="/create-user">
+          <button type="submit" className="btn">
+            <FontAwesomeIcon icon={faPlus} key="hsj8"></FontAwesomeIcon> Create
+            User
+          </button>
+        </Link>
+      </div>
       <div className="dashboardlist">
         {usercontent.userList.map((el, index) => {
           return (
